@@ -1,0 +1,43 @@
+:root {
+    --sunflower1: #fbdd9d;
+    --sunflower2: #e8b12d;
+    --sunflower3: #4f4e28;
+    --sunflower4: #925f17;
+    --sunflower5: #e9bf59;
+    --foreground: #d9ac4b;
+    --white:      #f8f7ef;
+}
+
+@font-face {
+font-family: "Tahoma8px";
+src: url("Fonts/fs-tahoma-8px.otf.woff2") format("woff2"),
+}
+
+html {
+  max-width: 90ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Tahoma8px", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: var(--sunflower1);
+}
+
+.home {
+    background-color: var(--sunflower5);
+} 
+
+.card {
+    width: fit-content;
+    margin: auto;
+    background-color: var(--white);
+}
