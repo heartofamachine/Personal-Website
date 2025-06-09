@@ -10,37 +10,51 @@
 
 @font-face {
 font-family: "Tahoma8px";
-src: url("Fonts/fs-tahoma-8px.otf.woff2") format("woff2"),
+src: url("Fonts/Tahoma8px/fs-tahoma-8px.otf.woff2") format("woff2");
+}
+
+@font-face {
+font-family: "Lullaby";
+src: url(Fonts/Lullaby/Lullaby-Regular.otf) format("opentype"),
+     url(Fonts/Lullaby/Lullaby-Regular.ttf) format("truetype");
+
 }
 
 html {
-  max-width: 90ch;
-  padding: 3em 1em;
+  max-width: 1000px;
+  padding: 1em 3em;
   margin: auto;
   line-height: 1.75;
   font-size: 2em;
-  letter-spacing: 2px;
   text-align: center;
-  font-family: "Tahoma8px", sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-family: "Lullaby", "Tahoma8px", sans-serif;
 }
 
 body {
     background-color: var(--sunflower1);
+    display: flex;
+    justify-content: center;
 }
 
 .home {
-    background-color: var(--sunflower5);
+    background-image: url(Images/paper_texture_2.jpg);
+    border: 2px solid var(--sunflower3);
+    padding: 20px;
 } 
 
 h1 {
     width: fit-content;
     padding: 0px 20px;
-    margin-top: 50px;
+    margin: 0 auto 20px;
+    background-image: url(Images/paper_texture.jpg);
+    border: 2px solid var(--sunflower3);
+    letter-spacing: 2px;
+}
+
+p {
+    width: fit-content;
+    padding: 0px 20px;
     margin: auto;
     background-color: var(--white);
-    border-color: black;
+    border: 5px solid var(--sunflower3);
 }
